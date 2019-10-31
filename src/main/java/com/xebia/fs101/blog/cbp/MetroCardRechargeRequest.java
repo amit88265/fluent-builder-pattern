@@ -1,11 +1,11 @@
 package com.xebia.fs101.blog.cbp;
 
-class MetroCardRecharge {
+class MetroCardRechargeRequest {
     private long cardNumber;
     private double amount;
     private String promoCode;
 
-    private MetroCardRecharge(Builder builder) {
+    private MetroCardRechargeRequest(Builder builder) {
         cardNumber = builder.cardNumber;
         amount = builder.amount;
         promoCode = builder.promoCode;
@@ -35,8 +35,8 @@ class MetroCardRecharge {
             return this;
         }
 
-        MetroCardRecharge build() {
-            return new MetroCardRecharge( this );
+        MetroCardRechargeRequest build() {
+            return new MetroCardRechargeRequest( this );
         }
     }
 }

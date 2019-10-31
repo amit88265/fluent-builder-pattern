@@ -3,11 +3,11 @@ package com.xebia.fs101.blog.fbp;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
-public class MetroCardRechargeTest {
+public class MetroCardRechargeRequestRequestTest {
 
     @Test
     public void should_able_to_recharge_with_promo_code() {
-        MetroCardRecharge recharge = new MetroCardRecharge
+        MetroCardRechargeRequest recharge = new MetroCardRechargeRequest
                 .MetroCardRechargeBuilder()
                 .tapOnMetroIcon()
                 .addCardNumber( 123 )
@@ -22,7 +22,7 @@ public class MetroCardRechargeTest {
 
     @Test
     public void should_able_to_recharge_without_promo_code() {
-        MetroCardRecharge recharge = new MetroCardRecharge.MetroCardRechargeBuilder()
+        MetroCardRechargeRequest recharge = new MetroCardRechargeRequest.MetroCardRechargeBuilder()
                 .tapOnMetroIcon()
                 .addCardNumber( 24661235 )
                 .addAmount( 25 )
